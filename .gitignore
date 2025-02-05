@@ -33,3 +33,6 @@ node_modules/
 
 # VS Code
 .vscode/
+
+# Build output
+dist/
