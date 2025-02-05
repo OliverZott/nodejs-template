@@ -10,3 +10,6 @@ npm install express
 npx tsc --init
 git init
 ```
+
+- add simpe express rest endpoint
+- run `npm start`
