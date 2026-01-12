@@ -11,10 +11,11 @@ A simple Node.js Express TypeScript project including project-setup and deployme
 ```bash
 mkdir <proj-name>
 npm init -y
-npm install typescript ts-node-dev @types/node @types/express --save-dev
-npm install express
 npx tsc --init
 git init
+
+npm install typescript ts-node-dev @types/node @types/express --save-dev
+npm install express
 ```
 
 ## Production Setup
