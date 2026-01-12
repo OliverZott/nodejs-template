@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getDemoData } from "../controllers/demoController.js";
+import { getDemoData, getError } from "../controllers/demoController.js";
 
 const router = Router();
 
@@ -12,5 +12,6 @@ router.get("/health", (_req, res) => {
 });
 
 router.get("/demo", getDemoData);
+router.get("/error", getError);
 
 export default router;
