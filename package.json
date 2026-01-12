@@ -7,8 +7,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "tsx watch src/app.ts",
-    "debug": "tsx --inspect-brk src/app.ts",
+    "dev": "tsx watch --inspect src/app.ts",
     "build": "tsc",
     "start": "node dist/app.js",
     "type-check": "tsc --noEmit",
