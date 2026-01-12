@@ -1,0 +1,16 @@
+services:
+  api:
+    build: .
+    image: nodejs-api:prod
+    container_name: nodejs-api
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      LOG_DIR: /app/logs
+      PORT: 3000
+    restart: unless-stopped
+
+    # bind mount (relative path to compose file)
+    volumes:
+      - ./logs:/app/logs

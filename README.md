@@ -2,6 +2,10 @@
 
 A simple Node.js Express TypeScript project including project-setup and deployment steps.
 
+## Run and Debug
+
+- `npm run dev` - Run the project in development mode with automatic restarts on file changes. Should also attach debugger on start.
+
 ## Project Setup
 
 ```bash
@@ -13,9 +17,6 @@ npx tsc --init
 git init
 ```
 
-- add simple express rest endpoint
-- run `npm start`
-
 ## Production Setup
 
 ### Prerequisites
@@ -26,24 +27,6 @@ git init
 
 ### Steps
 
-1. Build the project:
-
-    ```bash
-    npm run build
-    ```
-
-2. Copy the `dist` folder and `package.json` to the production server.
-
-3. On the production server, install only the production dependencies:
-
-    ```bash
-    npm install --production
-    ```
-
-4. Start the server:
-
-    ```bash
-    npm run start:prod
-    ```
-
-[link](https://medium.com/@eran.amrani/how-to-deploy-a-ts-node-js-app-in-minutes-e3ab17ab0673)
+- Clone the Repository: Clone your project repository to the production server.
+- Install Dependencies: Run npm install to install all necessary dependencies.
+- Build the Project: Run npm run build to compile TypeScript files to JavaScript.
