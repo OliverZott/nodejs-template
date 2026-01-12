@@ -31,8 +31,5 @@ node_modules/
 # dotenv environment variables file
 .env
 
-# VS Code
-.vscode/
-
 # Build output
 dist/

@@ -27,8 +27,7 @@ const writeJsonToFile = (line: string): void => {
 const writeTextToFile = (level: string, message: string, extra?: unknown): void => {
     const line =
         `${timestamp()} ${level.toUpperCase()} ${message}` +
-        (extra ? ` | ${JSON.stringify(extra)}` : "") +
-        "\n";
+        (extra ? ` | ${JSON.stringify(extra)}` : "");
 
     fs.appendFile(getLogFilePath(), line + "\n", (err) => {
         if (err) console.log("Failed to write log file", err);
