@@ -2,6 +2,11 @@
 
 A simple Node.js Express TypeScript project including project-setup and deployment steps.
 
+TODO:
+
+- Global error handling middleware
+- Environment variable management (dotenv)
+
 ## Run and Debug
 
 - `npm run dev` - Run the project in development mode with automatic restarts on file changes. Should also attach debugger on start.
